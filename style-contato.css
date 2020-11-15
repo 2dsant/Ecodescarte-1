@@ -1,0 +1,144 @@
+body, h1, h2, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    font-family: Nunito, Helvetica, Arial, sans-serif;
+    color: #222;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  /*Header*/
+  .menu-bg{
+    background-color: #222;
+  }
+  .menu h1, a{
+    color: white;
+  }
+  .container-menu{
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+  .logo img{
+    height: 1.25em;
+  }
+  .logo a{
+      font-size: 2.25em;
+      font-weight: bold;
+      margin: 15px 10px;
+  }
+  .nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-menu a{
+    display: block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+  .nav-menu a:hover{
+    color: rgb(31, 175, 31);
+  }
+/*Conteudo*/
+.container-textos{
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(31, 175, 31);
+    clear: both;
+}
+
+.content{
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  
+}
+.content h1{
+    font-size: 3.25em;
+    margin:60px 0 0;
+    padding: 10px;
+    clear: both;
+}
+.contato {
+  width: 100%;
+
+  padding: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+.field {
+  padding: 10px;
+  margin-bottom: 15px;
+  
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  height: 50px;
+
+}
+
+.side {
+  font-weight: bold;
+}
+
+.img-location {
+  width: 30px;
+}
+
+table tr, td {
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+
+/*Footer*/
+.container-footer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top:10px;
+    bottom: 0;
+    background-color: #222;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.redes-sociais{
+    margin: 0 auto;
+    padding: 10px;
+}
+.redes-sociais img{
+    height: 2.5em;
+    margin: 20px;
+}
