@@ -142,3 +142,27 @@ table tr, td {
     height: 2.5em;
     margin: 20px;
 }
+
+@media(max-width:700px){
+  .menu-bg{
+    text-align: center;
+  }
+  .container-menu{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .container-menu ul{
+    display: inline-block;
+    text-align: center;
+  }
+  .container-textos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+}
