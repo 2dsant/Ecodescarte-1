@@ -79,6 +79,9 @@ a{
   font-size: 2em;
   padding: 10px;
 }
+.titulo a{
+  color: rgb(31, 175, 31);
+}
 
 .contato {
 width: 100%;

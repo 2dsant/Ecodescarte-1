@@ -1,11 +1,4 @@
-$(document).ready(function(){
-    $('#select').on('change',function(){
-
-        var selectValor =  '.'+$(this).val();
-
-
-        $('.cards-lugares').children('div').hide();
-        $('.cards-lugares').children(selectValor).show();
-    });
-
-});
+function selectPosto(combo){
+    $('.cards-lugares').children('div').hide();
+    $('.cards-lugares').children('.'+$(combo).val()).addClass('animate__animated animate__fadeIn').show();
+}
