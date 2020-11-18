@@ -80,12 +80,12 @@ body, h1, h2, p, ul, li, a{
 }
 .container-select{
     display: block;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     margin: 0 auto;
     max-width: 960px;
     font-size: 1.50em;
     padding: 30px;
-    justify-content: center;
 }
 select{
     border-radius: 5px;
@@ -99,7 +99,6 @@ select{
     max-height: 200px;
     min-height: 200px;
     border-radius: 10px;
-    /* box-shadow: 2px 2px 6px black; */
 }
 .container-cards{
     max-width: 960px;
@@ -113,7 +112,7 @@ select{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 figcaption{
@@ -124,9 +123,220 @@ figcaption{
 .cards{
     max-width: 400px;
     padding: 10px;
+    text-align: center;
+    transition: 0.3s;
 }
 .cards p{
     text-align: center;
+}
+.label-map{
+  color: rgb(31, 175, 31);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container-hide{
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: baseline;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+iframe{
+  transition: all 0.5s;
+}
+/*Maps crystal*/
+.hide-map-crystal{
+  display: none;
+}
+#check-map-crystal{
+  display: none;
+}
+#check-map-crystal:checked ~ .hide-map-crystal{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps Palladium*/
+.hide-map-palladium{
+  display: none;
+  transition: all 0.3s ease-in;
+}
+#check-map-palladium{
+  display: none;
+  transition: all 0.3s ease-in;
+}
+#check-map-palladium:checked ~ .hide-map-palladium{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  transition: all 0.3s ease-in;
+}
+/*Maps Ventura*/
+.hide-map-ventura{
+  display: none;
+}
+#check-map-ventura{
+  display: none;
+}
+#check-map-ventura:checked ~ .hide-map-ventura{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps shopping barigui*/
+.hide-map-barigui{
+  display: none;
+}
+#check-map-barigui{
+  display: none;
+}
+#check-map-barigui:checked ~ .hide-map-barigui{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+/*Maps shopping Curitiba*/
+.hide-map-curitiba{
+  display: none;
+}
+#check-map-curitiba{
+  display: none;
+}
+#check-map-curitiba:checked ~ .hide-map-curitiba{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps shopping Estação*/
+.hide-map-estacao{
+  display: none;
+}
+#check-map-estacao{
+  display: none;
+}
+#check-map-estacao:checked ~ .hide-map-estacao{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+/*Maps shopping Muller*/
+.hide-map-muller{
+  display: none;
+}
+#check-map-muller{
+  display: none;
+}
+#check-map-muller:checked ~ .hide-map-muller{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps shopping Jd Americas*/
+.hide-map-americas{
+  display: none;
+}
+#check-map-americas{
+  display: none;
+}
+#check-map-americas:checked ~ .hide-map-americas{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+/*Maps Japão*/
+.hide-map-japao{
+  display: none;
+}
+#check-map-japao{
+  display: none;
+}
+#check-map-japao:checked ~ .hide-map-japao{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps Tingui*/
+.hide-map-tingui{
+  display: none;
+}
+#check-map-tingui{
+  display: none;
+}
+#check-map-tingui:checked ~ .hide-map-tingui{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+/*Maps Pq. Barigui*/
+.hide-map-pqbarigui{
+  display: none;
+}
+#check-map-pqbarigui{
+  display: none;
+}
+#check-map-pqbarigui:checked ~ .hide-map-pqbarigui{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps Pq. Tanguá*/
+.hide-map-tangua{
+  display: none;
+}
+#check-map-tangua{
+  display: none;
+}
+#check-map-tangua:checked ~ .hide-map-tangua{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+/*Maps Passeio Publico*/
+.hide-map-passeio{
+  display: none;
+}
+#check-map-passeio{
+  display: none;
+}
+#check-map-passeio:checked ~ .hide-map-passeio{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
+}
+/*Maps Bosque Fazendinha*/
+.hide-map-fazendinha{
+  display: none;
+}
+#check-map-fazendinha{
+  display: none;
+}
+#check-map-fazendinha:checked ~ .hide-map-fazendinha{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+/*Maps praça igreja joao bagozzi*/
+.hide-map-bagozzi{
+  display: none;
+}
+#check-map-bagozzi{
+  display: none;
+}
+#check-map-bagozzi:checked ~ .hide-map-bagozzi{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-right: 1px;
 }
   /*Footer*/
 .container-footer{
@@ -146,4 +356,21 @@ figcaption{
 .redes-sociais img{
     height: 2.5em;
     margin: 20px;
+}
+
+/*media queries*/
+@media (max-width: 600px){
+  .menu-bg{
+    text-align: center;
+  }
+  .container-menu{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .container-menu ul{
+    display: inline-block;
+    text-align: center;
+  }
 }

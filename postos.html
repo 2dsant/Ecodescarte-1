@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encontre seu posto de coleta</title>
     <link href="style-postos.css" rel="stylesheet" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="postos.js"></script>
 </head>
 <body>
     <header>
@@ -30,133 +34,252 @@
       </header>
       <div class="container-titulos">
         <div class="titulos">
-            <h1>Aqui você pode encontrar o posto mais perto de sua casa.</h1>
+            <h1>Aqui você pode encontrar o posto de coleta mais próximo de sua casa.</h1>
             <p>Estamos sempre implementando novos postos de coletas para aumentar sua comodidade.
             Caso tenha alguma sugestão você pode nos informar por <a href="cadastro.html">aqui</a>.</p>
         </div>
       </div>
       <label class="container-select">
           Selecione seu bairro:
-        <select>
-            <option>--Todos--</option>
-            <option>Água Verde</option>
-            <option>Batel</option>
-            <option>Bigorrilho</option>
-            <option>Centro</option>
-            <option>Fazendinha</option>
-            <option>Jd. das Américas</option>
-            <option>Mossunguê</option>
-            <option>Pilarzinho</option>
-            <option>Portão</option>
-            <option>Taboão</option>
+        <select id="select">
+            <option value="todos">--Todos--</option>
+            <option value="batel">Batel</option>
+            <option value="bigorrilho">Bigorrilho</option>
+            <option value="centro">Centro</option>
+            <option value="fazendinha">Fazendinha</option>
+            <option value="jd-americas">Jd. das Américas</option>
+            <option value="mossungue">Mossunguê</option>
+            <option value="pilarzinho">Pilarzinho</option>
+            <option value="portao">Portão</option>
+            <option value="taboao">Taboão</option>
         </select>
     </label>
-      <div class="container-cards">
-        <div class="cards-lugares">
-            <div class="cards">
+      <div class="container-cards animate__animated animate__fadeIn">
+        <div class="cards-lugares animate__animated animate__fadeIn">
+            <div class="cards batel todos">
                 <figure>
                     <img class="img-locais" src="img/locais/crystal.jpg" alt="Shopping Crystal">
                     <figcaption>Shopping Crystal</figcaption>
                     <p>R. Comendador Araújo, 731 - Batel, Curitiba - PR, 80420-000</p>
                 </figure>
+                <div class="container-hide animate__animated animate__fadeIn">
+                    <label for="check-map-crystal" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-crystal">
+                
+                    <div class="hide-map-crystal animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.9751463348407!2d-49.28340088528889!3d-25.4390944394812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce476822b68f9%3A0x5db36d63353ff01f!2sR.%20Comendador%20Ara%C3%BAjo%2C%20731%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1605714510416!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards portao todos">
                 <figure>
                     <img class="img-locais" src="img/locais/Palladium-Curitiba.jpg" alt="Shopping Palladium">
                     <figcaption>Shopping Palladium</figcaption>
                     <p>Av. Pres. Kennedy, 4121 - Portão, Curitiba - PR, 80610-905</p>
                 </figure>
+                <div class="container-hide animate__animated animate__fadeIn">
+                    <label for="check-map-palladium" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-palladium">
+                
+                    <div class="hide-map-palladium animate__animated animate__fadeIn" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.8181165151036!2d-49.29314448528793!3d-25.477748141019074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35db9b9dc5b%3A0xb729c0f7d53a01ac!2sAv.%20Pres.%20Kennedy%2C%204121%20-%20Port%C3%A3o%2C%20Curitiba%20-%20PR%2C%2080610-270!5e0!3m2!1spt-BR!2sbr!4v1605717795788!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards portao todos">
                 <figure>
                     <img class="img-locais" src="img/locais/ventura.jpg" alt="Shopping Ventura">
                     <figcaption>Shopping Ventura</figcaption>
-                    <p>R. Itacolomi, 292 - Portão, Curitiba - PR, 81070-150</p>
+                    <p>R. Itacolomi, 292 - Portão, Curitiba - PR, 81070-150</p><br>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-ventura" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-ventura">
+                
+                    <div class="hide-map-ventura animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.7953867776114!2d-49.29678888528791!3d-25.478506941049403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce342bb4c0fc5%3A0x1f59a800d77405cd!2sR.%20Itacolomi%2C%20292%20-%20Port%C3%A3o%2C%20Curitiba%20-%20PR%2C%2081070-150!5e0!3m2!1spt-BR!2sbr!4v1605721674746!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                
+                    </div>
+                    </div>
             </div>
-            <div class="cards">
+            <div class="cards mossungue todos">
                 <figure>
                         <img class="img-locais" src="img/locais/shoppingbarigui.jpg" alt="Shopping Barigui">
                         <figcaption>Shopping Barigui</figcaption>
                         <p>R. Prof. Pedro Viriato Parigot de Souza, 600 - Mossunguê, Curitiba - PR, 81200-100</p>
                     </figure>
+                    <div class="container-hide">
+                        <label for="check-map-barigui" class="label-map">Ver no mapa</label>
+                        <input type="checkbox" id="check-map-barigui">
+                    
+                        <div class="hide-map-barigui animate__animated animate__fadeIn">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0935743486048!2d-49.31897698528902!3d-25.435134939323753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3d04a753625%3A0x47496e5bf360ab0!2sR.%20Prof.%20Pedro%20Viriato%20Parigot%20de%20Souza%2C%20600%20-%20Mossungu%C3%AA%2C%20Curitiba%20-%20PR%2C%2081200-100!5e0!3m2!1spt-BR!2sbr!4v1605721985866!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+                        </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards centro todos">
                 <figure>
                     <img class="img-locais" src="img/locais/shoppingcuritiba.jpg" alt="Shopping Curitiba">
                     <figcaption>Shopping Curitiba</figcaption>
                     <p>R. Brg. Franco, 2300 - Centro, Curitiba - PR, 80250-030</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-curitiba" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-curitiba">
+                
+                    <div class="hide-map-curitiba animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.918562806678!2d-49.27967808528891!3d-25.440986039556382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce470ec248093%3A0xa0fa2e793b1b3e2!2sR.%20Brg.%20Franco%2C%202300%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2080250-030!5e0!3m2!1spt-BR!2sbr!4v1605723180621!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards reboucas todos">
                 <figure>
                     <img class="img-locais" src="img/locais/Shopping Estação.JPG" alt="Shopping Curitiba">
                     <figcaption>Shopping Estação</figcaption>
                     <p>Av. Sete de Setembro, 2775 - Rebouças, Curitiba - PR, 80230-010</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-estacao" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-estacao">
+                
+                    <div class="hide-map-estacao animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.004881325088!2d-49.268748885289!3d-25.438100339441597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce468bd71a9c3%3A0xd42dc845c0cb1b6c!2sAv.%20Sete%20de%20Setembro%2C%202775%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080230-010!5e0!3m2!1spt-BR!2sbr!4v1605723327959!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards centro-civico todos">
                 <figure>
                     <img class="img-locais" src="img/locais/shoppingmuller.jpg" alt="Shopping Muller">
                     <figcaption>Shopping Muller</figcaption>
                     <p>Av. Cândido de Abreu, 127 - Centro Cívico, Curitiba - PR, 80530-900</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-muller" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-muller">
+                
+                    <div class="hide-map-muller animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.465687286383!2d-49.27242148528928!3d-25.422690038829263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce410dfe039f5%3A0xbbcf89c533723a79!2sAv.%20C%C3%A2ndido%20de%20Abreu%2C%20127%20-%20Centro%20C%C3%ADvico%2C%20Curitiba%20-%20PR%2C%2080530-000!5e0!3m2!1spt-BR!2sbr!4v1605723493985!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards jd-americas todos">
                 <figure>
                     <img class="img-locais" src="img/locais/shopping-jardim-das-americas.jpg" alt="Shopping Muller">
                     <figcaption>Shopping Jardim das Américas</figcaption>
                     <p>Av. Nossa Sra. de Lourdes, 63 - Jardim das Américas, Curitiba - PR, 81530-020</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-americas" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-americas">
+                
+                    <div class="hide-map-americas animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.6081540389832!2d-49.23065948528853!3d-25.451360739969022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce516a4f8b50f%3A0x6d470912343cb093!2sAv.%20Nossa%20Sra.%20de%20Lourdes%2C%2063%20-%20Jardim%20das%20Am%C3%A9ricas%2C%20Curitiba%20-%20PR%2C%2081530-020!5e0!3m2!1spt-BR!2sbr!4v1605723611903!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards batel todos">
                 <figure>
                     <img class="img-locais" src="img/locais/pracajapao.jpg" alt="Praça do Japão">
                     <figcaption>Praça do Japão</figcaption>
                     <p>Av. Sete de Setembro, s/n - Batel, Curitiba - PR, 80730-390</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-japao" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-japao">
+                
+                    <div class="hide-map-japao animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.7720543671644!2d-49.28943818528879!3d-25.445883239751076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3889c974203%3A0x8f102bbe58056d93!2zUHJhw6dhIGRvIEphcMOjbw!5e0!3m2!1spt-BR!2sbr!4v1605723802603!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards pilarzinho todos">
                 <figure>
                     <img class="img-locais" src="img/locais//parquetingui.jpg" alt="Parque Tingui">
                     <figcaption>Parque Tingui</figcaption>
                     <p>Av. Sete de Setembro, s/n - Batel, Curitiba - PR, 80730-390</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-tingui" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-tingui">
+                
+                    <div class="hide-map-tingui animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.4767794387626!2d-49.30774018529028!3d-25.388846437485356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce11863885b9b%3A0x106542d72278f3e!2sParque%20Tingui!5e0!3m2!1spt-BR!2sbr!4v1605723874134!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards bigorrilho todos">
                 <figure>
                     <img class="img-locais" src="img/locais/parquebarigui.jfif" alt="Parque Barigui">
                     <figcaption>Parque Barigui</figcaption>
                     <p>Av. Fredolin Wolf, 1870 - Pilarzinho, Curitiba - PR, 82030-600</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-pqbarigui" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-pqbarigui">
+                
+                    <div class="hide-map-pqbarigui animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.4332187569885!2d-49.308364785289385!3d-25.423776138872316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3df88cb5fa7%3A0x64ed421a45cf1e53!2sParque%20Barigui!5e0!3m2!1spt-BR!2sbr!4v1605724022826!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards taboao todos">
                 <figure>
                     <img class="img-locais" src="img/locais/Tanguá_Curitiba.jpg" alt="Parque Tanguá">
                     <figcaption>Parque Tanguá</figcaption>
                     <p>Rua Oswaldo Maciel, 97 - Taboão, Curitiba - PR, 82130-494</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-tangua" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-tangua">
+                
+                    <div class="hide-map-tangua animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7209.536176209128!2d-49.28937022605074!3d-25.37908784180799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6d445082041%3A0x69949666c14b40dc!2sParque%20Tangu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1605724235065!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards centro todos">
                 <figure>
                     <img class="img-locais" src="img/locais/passiopublico.jpeg" alt="Passeio Público">
                     <figcaption>Passeio Público</figcaption>
                     <p>Rua Presidente Carlos Cavalcanti, s/n - Centro, Curitiba - PR, 80030-010</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-passeio" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-passeio">
+                
+                    <div class="hide-map-passeio animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.3668130268725!2d-49.268393860715456!3d-25.425997332401696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce41476b2bc55%3A0x9e583478722cb1de!2sPasseio%20P%C3%BAblico!5e0!3m2!1spt-BR!2sbr!4v1605724338265!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards fazendinha todos">
                 <figure>
                     <img class="img-locais" src="img/locais/Fazendinha - Bosque da Fazendinha.JPG" alt="Bosque Fazendinha">
                     <figcaption>Bosque Fazendinha</figcaption>
                     <p>R. Carlos Klemtz, 523 - Fazendinha, Curitiba - PR, 81320-000</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-fazendinha" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-fazendinha">
+                
+                    <div class="hide-map-fazendinha animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.866379166527!2d-49.324654285287856!3d-25.476136890954955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce302dea468cb%3A0x6d971ba791fe9906!2sCancha%20de%20Futebol%20de%20Areia%20-%20Parque%20Bosque%20da%20Fazendinha%2C%20R.%20Carlos%20Klemtz%2C%20523%20-%20Fazendinha%2C%20Curitiba%20-%20PR%2C%2081320-000!5e0!3m2!1spt-BR!2sbr!4v1605724510912!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
-            <div class="cards">
+            <div class="cards portao todos">
                 <figure>
                     <img class="img-locais" src="img/locais/igrejabagozzi.jpg" alt="Igreja Bagozzi">
                     <figcaption>Parque Igreja João Bagozzi</figcaption>
-                    <p>R. João Bettega, 206 - Portão, Curitiba - PR, 81070-000</p>
+                    <p>Av. Rep. Argentina, S/N - Portão, Curitiba - PR, 80610-260</p>
                 </figure>
+                <div class="container-hide">
+                    <label for="check-map-bagozzi" class="label-map">Ver no mapa</label>
+                    <input type="checkbox" id="check-map-bagozzi">
+                
+                    <div class="hide-map-bagozzi animate__animated animate__fadeIn">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28815.52361173259!2d-49.31185526044921!3d-25.473663800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3661e18da1b%3A0x3f7812df4aad45f1!2sPra%C3%A7a%20Padre%20Jo%C3%A3o%20Bagozzi!5e0!3m2!1spt-BR!2sbr!4v1605724673998!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
+                </div>
             </div>
         </div>
       </div>
